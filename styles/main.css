@@ -1,0 +1,63 @@
+html, body {
+	font-size: 16px;
+	background-color: #d8e8dc;
+	font-weight: 300;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+	font-family: 'Climate Crisis', 'Source Serif Pro', sans-serif;
+	text-align: center;
+	font-size: 4rem;
+	margin: 0;
+}
+
+main {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.navLinks {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.navLinks li {
+	display: inline-block;
+	padding: 2rem 0rem;
+	margin: 0;
+}
+
+.navLinks a {
+	text-decoration: none;
+	padding: 0 2.5rem 0 2.5rem;
+	font-size: 1.5rem;
+	color: black;
+}
+
+.navLinks a:hover {
+	text-decoration: underline;
+	color: orange;
+	font-style: italic;
+}
+
+img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.emptyDiv {
+	height: 2rem;
+	width: 100%;
+}
+
+/*.box [class^="col"] {
+	background: #f7fcf0;
+	border: 1px solid #a8ddb5;
+	border-radius: 5px;
+	box-sizing: border-box;
+}*/
