@@ -36,7 +36,6 @@ h1 {
 	}
 }
 
-
 h2 {
 	font-family: 'Syne', 'Source Serif Pro', sans-serif;
 	text-align: center;
@@ -116,7 +115,7 @@ a {
 .navLinks a {
 	text-decoration: none;
 	padding: 0 2.5rem 0 2.5rem;
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 	color: black;
 }
 
@@ -173,6 +172,9 @@ a {
 @media (min-width: 800px) {
 	.moveNav {
 		margin: 1.5rem 0;
+	}
+	.navLinks a {
+		font-size: 1.4rem;
 	}
 }
 
