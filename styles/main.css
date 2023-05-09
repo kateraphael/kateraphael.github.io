@@ -51,7 +51,7 @@ h3 {
 
 main {
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -107,15 +107,20 @@ a {
 }
 
 .navLinks li {
-	display: inline-block;
 	padding: 0rem;
 	margin: 0;
+}
+
+@media (min-width: 700px) {
+	.navLinks li {
+		display: inline-block;
+	}
 }
 
 .navLinks a {
 	text-decoration: none;
 	padding: 0 2.5rem 0 2.5rem;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	color: black;
 }
 
@@ -172,9 +177,6 @@ a {
 @media (min-width: 800px) {
 	.moveNav {
 		margin: 1.5rem 0;
-	}
-	.navLinks a {
-		font-size: 1.4rem;
 	}
 }
 
