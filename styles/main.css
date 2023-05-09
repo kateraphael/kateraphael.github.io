@@ -1,24 +1,93 @@
 html, body {
-	font-size: 16px;
-	background-color: #d8e8dc;
+	font-size: 19px;
+	background-color: #f5fce3;
 	font-weight: 300;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Zilla Slab', Baskerville, serif;
 	line-height: 1.5;
 }
 
-h1 {
-	font-family: 'Climate Crisis', 'Source Serif Pro', sans-serif;
-	text-align: center;
-	font-size: 4rem;
-	margin: 0;
+p {
+	font-size: 1.1rem;
 }
+
+h1 {
+	font-family: 'Syne', 'Source Serif Pro', sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin: 0;
+	white-space: nowrap;
+}
+
+@media (min-width: 800px) {
+	h1 {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+h2 {
+	font-family: 'Syne', 'Source Serif Pro', sans-serif;
+	text-align: center;
+	font-size: 3rem;
+	margin: .3rem 0;
+}
+
+h3 {
+	font-family: 'Syne', 'Source Serif Pro', sans-serif;
+	font-size: 1.1rem;
+}
+
 
 main {
 	margin: 0 auto;
 	width: 70%;
 }
 
+img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.sansSerif {
+	font-family: 'Syne', 'Source Serif Pro', sans-serif;
+}
+
+
+#headshot {
+	border-radius: 4rem;
+	padding: 5px;
+	border: 10px solid;
+	border-color: #37532F;
+	margin: 0 auto;
+	max-width: 85%;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.cardtext {
+	padding: 0 1rem 0.5rem;
+}
+
+.cardphoto {
+	border-radius: 1rem 1rem 0 0;
+	margin: 0;
+	padding: 0;
+	display:block;
+}
+
 .navLinks {
+/*	font-family: 'Syne', 'Source Serif Pro', sans-serif;*/
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -28,26 +97,71 @@ main {
 
 .navLinks li {
 	display: inline-block;
-	padding: 2rem 0rem;
+	padding: 0rem;
 	margin: 0;
 }
 
 .navLinks a {
 	text-decoration: none;
 	padding: 0 2.5rem 0 2.5rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	color: black;
 }
 
 .navLinks a:hover {
 	text-decoration: underline;
-	color: orange;
-	font-style: italic;
+	color: #37532F;
 }
 
-img {
-	width: 100%;
-	margin: 0 auto;
+.col-6 {
+	margin: 0;
+}
+
+.move {
+	transform: translateY(0px);
+	display: block;
+	transition: all 0.2s;
+	box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.38);
+	background-color: #37532F;
+	border-radius: 1rem;
+	color: #FFFFFF;
+	margin: 0 0 1.5rem;
+}
+
+.move:last-child {
+	margin: 0 0 0.5rem;
+}
+
+@media only screen and (min-width: 45em) { 
+	.move {
+		margin:0 0 1.5rem;
+	}
+
+	.move:last-child {
+		margin: 0 0 1.5rem;
+	}
+
+}
+
+
+.move:hover {
+	transform: translateY(-10px);
+	box-shadow: 10px 20px 0px -3px rgba(0,0,0,0.38);
+}
+
+
+
+.moveNav {
+	transform: translateY(0px);
+	display: block;
+	transition: all 0.2s;
+/*	text-shadow: 0px 0px 0px rgba(0,0,0,0.38);*/
+	border-radius: 1rem;
+	margin: 1.5rem 0;
+}
+.moveNav:hover {
+	transform: translateY(-5px);
+/*	text-shadow: 0px 5px 0px rgba(0,0,0,0.38);*/
 }
 
 .emptyDiv {
@@ -55,9 +169,83 @@ img {
 	width: 100%;
 }
 
-/*.box [class^="col"] {
-	background: #f7fcf0;
-	border: 1px solid #a8ddb5;
-	border-radius: 5px;
-	box-sizing: border-box;
-}*/
+.bold {
+	font-weight: 700;
+}
+
+.moreLinks p {
+	margin: 0.7rem .2rem;
+	padding: 0.5rem;
+}
+
+a.moreLinks {
+	margin: 1.2rem 0.5rem;
+}
+
+/*div.col-6 {*/
+/*	margin: 0;*/
+/*}*/
+
+.moreLinks {
+	transform: translateY(0px);
+	display: block;
+	transition: all 0.2s;
+	box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.38);
+	background-color: #c1d689;
+	border-radius: 1rem;
+	color: #000000;
+	margin: 1rem .5rem;
+	padding: 0 .5rem;
+}
+
+.moreLinks:hover {
+	transform: translateY(-6px);
+	box-shadow: 10px 16px 0px -3px rgba(0,0,0,0.38);
+}
+
+.contact {
+	border-radius: 50%;
+    width: 200px;
+    height: 200px;
+/*    padding: 8px;*/
+    line-height: 150px;
+
+    background: black;
+/*    border: 2px solid black;*/
+    color: white;
+    text-align: center;
+    display: block;
+	font-family: 'Syne', 'Source Serif Pro', sans-serif;
+
+}
+
+/*p.contact {*/
+/*	display: block;*/
+/*	margin-block-start: 1em;*/
+/*    margin-block-end: 1em;*/
+/*    margin-inline-start: 0px;*/
+/*    margin-inline-end: 0px;*/
+/*	text-align: center;*/
+/*	padding: 1rem;*/
+
+}
+
+.foot {
+/*	font-family: 'Syne', 'Source Serif Pro', sans-serif;*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.foot li {
+	display: inline-block;
+	padding: 0rem 2rem;
+	margin: 0;
+	font-size: 1.1rem;
+}
+
+footer {
+	text-align: center;
+}

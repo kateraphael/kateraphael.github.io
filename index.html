@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Kate Raphael portfolio</title>
+    <title>Kate Raphael's portfolio</title>
     <meta name="description" content="Portfolio first draft"> 
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./assets/simple-grid.css">
+    <link rel="stylesheet" href="./styles/simple-grid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Source+Serif+Pro:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Zilla+Slab:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -23,20 +24,25 @@
         </div>
 
         <div class="row">
-          <div class="col-12 navLinks">
+          <div class="col-12">
             <nav>
               <ul class="navLinks">
-                <li><a href="https://kateraphael.co/">home</a></li>
-                <li><a href="https://kateraphael.substack.com/">substack</a></li>
-                <li><a href="https://twitter.com/KateRaphael_/">twitter</a></li>
+                <li><a class="moveNav" href="https://kateraphael.substack.com/">Substack</a></li>
+                <li><a class="moveNav" href="https://twitter.com/KateRaphael_/">Twitter</a></li>
+                <li><a class="moveNav" href="https://www.linkedin.com/in/kate-raphael-704618150/">LinkedIn</a></li>
               </ul>
             </nav>
           </div>
         </div>
 
         <div class="row">
-          <div id="headshot" class="col-6">
-            <img src="./assets/portraitbw.png" alt="An outdoor portrait of Kate Raphael, a 27-year-old white woman from the shoulders up">
+          <div class="col-12 emptyDiv">
+          </div>
+        </div>
+
+        <div class="row">
+          <div  class="col-6">
+            <img id="headshot" src="./assets/portraitbw.jpg" alt="An outdoor portrait of Kate Raphael, a 27-year-old white woman from the shoulders up">
           </div>
           <div id="bio" class="col-6">
             <p>I'm a journalist covering climate, environment, and health. I'm currently a student at the UC Berkeley School of Journalism. </p>
@@ -51,35 +57,102 @@
         </div>
 
         <div class="row">
-          <div class="col-6">
-            <h2>A Nasty Salmon-Killing Tire Chemical Is in Bay Waterways. Can It Be Cleaned Up?</h2>
-            <p>Bay Nature</p>
-          </div>
-          <div class="col-6">
-            <a href="https://baynature.org/2023/03/02/a-nasty-salmon-killing-tire-chemical-is-in-bay-waterways-can-it-be-cleaned-up/"><img src="./assets/tires.png" alt="Dozens of tires deteriorate in the mud of Rodeo Creek at low tide"></a>
+          <div class="col-12">
+            <h2>work</h2>
           </div>
         </div>
 
         <div class="row">
           <div class="col-6">
-            <a href="https://www.ehn.org/glyphosate-childrens-health-2659484037.html"><img src="./assets/glyphosate.png" alt="Two children walk through stalks of corn with their backs to the camera"></a>
+            <a class="move" href="https://baynature.org/2023/03/02/a-nasty-salmon-killing-tire-chemical-is-in-bay-waterways-can-it-be-cleaned-up/">
+              <div>
+                <img class="cardphoto" src="./assets/tires.png" alt="Dozens of tires deteriorate in the mud of Rodeo Creek at low tide">
+                <div class="cardtext">
+                  <h3 class="italic">Bay Nature</h3>
+                  <p class="sansSerif">A Nasty Salmon-Killing Tire Chemical Is in Bay Waterways. Can It Be Cleaned Up?</p>
+                  <p>6PPD-quinone comes from a long-used chemical that will be hard to replace in tires. But ‘green infrastructure’ may help stop it from entering our waters.</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="move" href="https://www.ehn.org/glyphosate-childrens-health-2659484037.html">
+              <div>
+                <img class="cardphoto" src="./assets/glyphosate.png" alt="Two children walk through stalks of corn with their backs to the camera">
+                <div class="cardtext">
+                  <h3 class="italic">Environmental Health News</h3>
+                  <p class="sansSerif">Kids’ glyphosate exposure linked to liver disease  and metabolic syndrome</p>
+                 <p>In a first-of-its kind study, researchers found children exposed to the controversial herbicide were more likely in early adulthood to have a collection of symptoms that increase risk of heart disease, diabetes and stroke.</p>
+                </div>
+              </div>
+            </a>
           </div>
+
           <div class="col-6">
-            <h2>Kids’ glyphosate exposure linked to liver disease and metabolic syndrome</h2>
-            <p>Environmental Health News</p>
+            <a class="move" href="https://www.sierraclub.org/sierra/more-cars-road-clean-or-not-means-more-microplastics">
+              <div>
+                <img class="cardphoto" src="./assets/carTire.png" alt="Two car tires are horizontally stacked on top of one another">
+                <div class="cardtext">
+                  <h3 class="italic">Sierra Magazine</h3>
+                  <p class="sansSerif">More Cars on the Road, Clean or Not, Means More Microplastics</p>
+                  <p>Scientists are puzzling over how to tackle the problem as the transition to electric vehicles gets underway.</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="move" href="https://www.ehn.org/chemicals-in-tires-leaching-into-water-2658670400.html">
+              <div>
+                <img class="cardphoto" src="./assets/fish.png" alt="Two children walk through stalks of corn with their backs to the camera">
+                <div class="cardtext">
+                  <h3 class="italic">Environmental Health News</h3>
+                  <p class="sansSerif">Car tire chemicals are killing salmon and steelhead</p>
+                  <p>The chemical 6PPD, added to tires to prevent degradation, is causing a “complete breakdown of the blood brain barrier” in fish, a new study found.</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-6">
-            <h2>More Cars on the Road, Clean or Not, Means More Microplastics</h2>
-            <p>Sierra Magazine</p>
-          </div>
-          <div class="col-6">
-            <a href="https://www.sierraclub.org/sierra/more-cars-road-clean-or-not-means-more-microplastics"><img src="./assets/carTire.png" alt="closeup photograph of two car tires stacked on top of one another"></a>
+          <div class="col-12">
+            <h2>even more work</h2>
           </div>
         </div>
+
+        <div class="row">
+          <div class="greenBackground col-12">
+            <h3>health & science</h3>
+            <a class="moreLinks" href="https://www.kqed.org/science/1982594/older-adults-in-sonoma-county-to-get-fire-safety-home-retrofits-for-free"><p><span class="bold sansSerif">KQED</span> | Older Adults in Sonoma County to Get Fire-Safety Home Retrofits — for Free</p></a>
+            <a class="moreLinks" href="https://berkeleysciencereview.com/article/2023/02/10/northern-california-farmers-and-climate-change"><p><span class="bold sansSerif">Berkeley Science Review</span> | Northern California farmers and climate change</p></a>
+            <a class="moreLinks" href="https://www.kneedeeptimes.org/is-weed-greener-indoors-or-out/"><p><span class="bold sansSerif">KneeDeep Times</span> | Is Weed Greener Indoors or Out?</p></a>
+             <a class="moreLinks" href="wellandgood.com/health-care-administrative-problems/"><p><span class="bold sansSerif">Well + Good</span> | As Patients Grow Sicker, Administrative Hassles Keep Care Out of Reach</p></a>
+            <a class="moreLinks" href="https://leaps.org/polio-to-covid-19-why-has-vaccine-confidence-eroded-over-the-last-70-years/"><p><span class="bold sansSerif">LeapsMag</span> | Polio to COVID-19: Why Has Vaccine Confidence Eroded Over the Last 70 Years?</p></a>
+            <a class="moreLinks" href="https://victorypress.org/2022/09/20/giving-birth-and-running-faster-why-running-is-hostile-to-childbearing-bodies/"><p><span class="bold sansSerif">The Victory Press</span> | Giving Birth and Running Faster</p></a>
+            <a class="moreLinks" href="https://victorypress.org/2021/05/14/we-need-to-stop-telling-runners-you-look-fit/"><p><span class="bold sansSerif">The Victory Press</span> | We Need to Stop Telling Runners “You Look Fit”</p></a>
+            <a class="moreLinks" href="https://www.ladyscience.com/reviews/lulu-miller-why-fish-dont-exist-2021?rq=kate%20raphael/"><p><span class="bold sansSerif">Lady Science</span> | Breaking Order, Embracing Chaos in Lulu Miller’s “Why Fish Don’t Exist”</p></a>
+            <h3>longform</h3>
+            <a class="moreLinks" href="https://sundaylongread.com/2021/10/30/two-dollar-bill-midwestern-brendan-and-the-value-of-a-story/"><p><span class="bold sansSerif">The Sunday Long Read</span> | Two Dollar Bill, Befuddled Brendan, and the currency of a story</p></a>
+            <h3>essays</h3>
+            <a class="moreLinks" href="https://trampset.org/rooftop-c04660528947"><p><span class="bold sansSerif">Trampset</span> | Rooftop</p></a>
+            <a class="moreLinks" href="https://catapult.co/stories/the-evolution-of-miley-cyrus-taught-me-to-embrace-imperfection-kate-raphael"><p><span class="bold sansSerif">Catapult</span> | The Evolution of Miley Cyrus Taught Me to Embrace Imperfection</p></a>
+            <a class="moreLinks" href="https://www.tracksmith.com/journal/article/what-becomes-of-the-broken-hearted/"><p><span class="bold sansSerif">Tracksmith Journal</span> | What becomes of the broken hearted?</p></a>
+          </div>
+        </div>
+
+        <footer>
+        <div class="row">
+          <div class="col-12">
+              <p class=>designed and coded by kate raphael</p>
+          </div>
+        </div>
+      </footer>
+
       </div>
+
+ <!--      <aside>
+        <div class="contact">Hello I am a circle</div>
+      </aside>
+ -->
+
 
     </main>
   </body>
