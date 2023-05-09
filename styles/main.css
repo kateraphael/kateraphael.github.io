@@ -87,7 +87,6 @@ a {
 }
 
 .navLinks {
-/*	font-family: 'Syne', 'Source Serif Pro', sans-serif;*/
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -140,28 +139,28 @@ a {
 	.move:last-child {
 		margin: 0 0 1.5rem;
 	}
-
 }
-
 
 .move:hover {
 	transform: translateY(-10px);
 	box-shadow: 10px 20px 0px -3px rgba(0,0,0,0.38);
 }
 
-
-
 .moveNav {
 	transform: translateY(0px);
 	display: block;
 	transition: all 0.2s;
-/*	text-shadow: 0px 0px 0px rgba(0,0,0,0.38);*/
 	border-radius: 1rem;
-	margin: 1.5rem 0;
+	margin: 0.5rem 0;
 }
 .moveNav:hover {
 	transform: translateY(-5px);
-/*	text-shadow: 0px 5px 0px rgba(0,0,0,0.38);*/
+}
+
+@media (min-width: 800px) {
+	.moveNav {
+		margin: 1.5rem 0;
+	}
 }
 
 .emptyDiv {
@@ -182,10 +181,6 @@ a.moreLinks {
 	margin: 1.2rem 0.5rem;
 }
 
-/*div.col-6 {*/
-/*	margin: 0;*/
-/*}*/
-
 .moreLinks {
 	transform: translateY(0px);
 	display: block;
@@ -203,35 +198,7 @@ a.moreLinks {
 	box-shadow: 10px 16px 0px -3px rgba(0,0,0,0.38);
 }
 
-.contact {
-	border-radius: 50%;
-    width: 200px;
-    height: 200px;
-/*    padding: 8px;*/
-    line-height: 150px;
-
-    background: black;
-/*    border: 2px solid black;*/
-    color: white;
-    text-align: center;
-    display: block;
-	font-family: 'Syne', 'Source Serif Pro', sans-serif;
-
-}
-
-/*p.contact {*/
-/*	display: block;*/
-/*	margin-block-start: 1em;*/
-/*    margin-block-end: 1em;*/
-/*    margin-inline-start: 0px;*/
-/*    margin-inline-end: 0px;*/
-/*	text-align: center;*/
-/*	padding: 1rem;*/
-
-}
-
 .foot {
-/*	font-family: 'Syne', 'Source Serif Pro', sans-serif;*/
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -249,3 +216,26 @@ a.moreLinks {
 footer {
 	text-align: center;
 }
+
+/* A project for another time :)
+.contact {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	line-height: 150px;
+	background: black;
+	color: white;
+	text-align: center;
+	display: block;
+	font-family: 'Syne', 'Source Serif Pro', sans-serif;
+}
+
+p.contact {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	text-align: center;
+	padding: 1rem;
+}*/
