@@ -60,6 +60,16 @@ main {
 	}
 }
 
+figure {
+	width: 100%;
+	margin: 0 auto;
+}
+
+figcaption {
+	text-align: center;
+	font-size: .83rem;
+}
+
 img {
 	width: 100%;
 	margin: 0 auto;
