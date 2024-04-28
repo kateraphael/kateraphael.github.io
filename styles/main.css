@@ -147,7 +147,7 @@ a {
 	transform: translateY(0px);
 	display: block;
 	transition: all 0.2s;
-	box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.38);
+/*	box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.38);*/
 	background-color: #37532F;
 	border-radius: 1rem;
 	color: #FFFFFF;
@@ -170,7 +170,7 @@ a {
 
 .move:hover {
 	transform: translateY(-10px);
-	box-shadow: 10px 20px 0px -3px rgba(0,0,0,0.38);
+/*	box-shadow: 10px 20px 0px -3px rgba(0,0,0,0.38);*/
 }
 
 .moveNav {
@@ -212,7 +212,7 @@ a.moreLinks {
 	transform: translateY(0px);
 	display: block;
 	transition: all 0.2s;
-	box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.38);
+/*	box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.38);*/
 	background-color: #c1d689;
 	border-radius: 1rem;
 	color: #000000;
@@ -222,7 +222,7 @@ a.moreLinks {
 
 .moreLinks:hover {
 	transform: translateY(-6px);
-	box-shadow: 10px 16px 0px -3px rgba(0,0,0,0.38);
+/*	box-shadow: 10px 16px 0px -3px rgba(0,0,0,0.38);*/
 }
 
 .foot {
